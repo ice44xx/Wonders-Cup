@@ -1,0 +1,48 @@
+@import './colors.scss';
+
+::selection {
+  background-color: $background_primary;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: $primary;
+}
+::-webkit-scrollbar-thumb {
+  background: $white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  p {
+    margin: 0;
+  }
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 0px 30px;
+  background-color: $primary;
+  color: $white;
+}
+
+@media (max-width: 1300px) {
+  main {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 0px 10px;
+  }
+}
