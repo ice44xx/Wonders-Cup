@@ -7,10 +7,10 @@
   width: 3px;
 }
 ::-webkit-scrollbar-track {
-  background: $primary;
+  background: $white;
 }
 ::-webkit-scrollbar-thumb {
-  background: $white;
+  background: $primary;
 }
 
 * {
@@ -31,19 +31,6 @@ main {
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  padding: 0px 30px;
-  background-color: $primary;
+  background-color: $background_primary;
   color: $white;
-}
-
-@media (max-width: 1300px) {
-  main {
-    background-size: contain;
-  }
-}
-
-@media (max-width: 500px) {
-  main {
-    padding: 0px 10px;
-  }
 }

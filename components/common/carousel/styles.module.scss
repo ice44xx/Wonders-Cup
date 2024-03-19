@@ -1,0 +1,69 @@
+@import '@/styles/colors.scss';
+
+.container_carousel {
+  width: 100%;
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  .row {
+    position: absolute;
+    object-fit: cover;
+  }
+  .container_left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    .background {
+      object-fit: cover;
+    }
+    .overlaw {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.658);
+    }
+  }
+  .container_right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container_info {
+      position: relative;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .title {
+        color: $white;
+        font-size: 45px;
+      }
+      .desc {
+        color: $white;
+        font-size: 22px;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 20px;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+      }
+    }
+  }
+}
+.image {
+  z-index: 10;
+  position: absolute;
+}

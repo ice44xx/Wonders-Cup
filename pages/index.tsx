@@ -1,3 +1,4 @@
+import Delivery from '@/components/slides/home';
 import Head from 'next/head';
 
 const HomePagePublic = () => {
@@ -13,7 +14,9 @@ const HomePagePublic = () => {
         <meta property="og:title" content="" />
         <meta property="og:description" content="" />
       </Head>
-      <main></main>
+      <main>
+        <Delivery />
+      </main>
     </>
   );
 };
