@@ -7,7 +7,10 @@
   justify-content: center;
   align-items: center;
   gap: 60px;
-  background-color: $background_primary;
+  background-color: $white;
+  .link {
+    text-decoration: none;
+  }
   .container_logo {
     position: absolute;
     left: 20px;
@@ -26,12 +29,19 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: $transition;
-
     &:hover {
       color: $secondary;
       border-bottom: 2px solid $secondary;
       transform: translateY(-4px);
       transition: $transition;
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    gap: 45px;
+    .title {
+      font-size: 20px;
     }
   }
 }

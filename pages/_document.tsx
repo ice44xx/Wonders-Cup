@@ -10,7 +10,10 @@ export default function Document() {
         <link rel="icon" href="/public/assets/fav.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@100..800&family=Fredoka:wght@300..700&family=Lobster&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

@@ -1,15 +1,16 @@
 import styles from './styles.module.scss';
 import Image from 'next/image';
+import Heart from '/public/assets/btn_heart.png';
 import React from 'react';
 import { Carousel, CarouselItem, CarouselControl, Button } from 'reactstrap';
+import Link from 'next/link';
 
 interface CarouselItemProps {
   src: string;
   altText: string;
   background: string;
   backgroundColor: string;
-  rowColor: string;
-  title: string;
+  title: React.ReactNode;
   desc: string;
   width: number;
   height: number;
@@ -47,10 +48,26 @@ const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ items }) => {
           <div className={styles.container_info}>
             <p className={styles.title}>{item.title}</p>
             <p className={styles.desc}>{item.desc}</p>
-            <Button className={styles.btn}>Peça agora 💕</Button>
+            <Link
+              href={
+                'https://www.ifood.com.br/delivery/porto-alegre-rs/wonders-cup-cafeteria-e-acaiteria-cristal/37bf0085-15ab-4830-8fbe-6dd1c436d4b1'
+              }
+              target="_blank"
+            >
+              <div className={styles.container_btn}>
+                <Button className={styles.btn}>Peça agora</Button>
+                <Image
+                  src={Heart}
+                  alt="Coração"
+                  width={80}
+                  height={80}
+                  style={{ maxWidth: '40px', height: 'auto' }}
+                  className={styles.heart}
+                />
+              </div>
+            </Link>
           </div>
         </div>
-        <Image src={item.rowColor} alt={item.altText} width={204} height={1080} className={styles.row} />
       </div>
     </CarouselItem>
   ));
@@ -59,8 +76,8 @@ const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ items }) => {
     <div className={styles.container_carousel}>
       <Carousel activeIndex={activeIndex} next={next} previous={previous} fade={true}>
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} className={styles.previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} className={styles.next} />
       </Carousel>
     </div>
   );
