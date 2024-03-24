@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import Ifood from '/public/assets/ifood.png';
+import Ifood from '/public/assets/ifood.webp';
 
 const Widget = () => {
   return (

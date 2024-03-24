@@ -1,17 +1,16 @@
-import React from 'react';
-import Background_strawberries from '/public/assets/background_two.jpg';
-import Background_cup_acai from '/public/assets/background_third.jpeg';
-import Background_acai from '/public/assets/background_four.png';
-import Background_coffe from '/public/assets/background_five.jpg';
-import Background_candy from '/public/assets/background_six.png';
-import Heart from '/public/assets/heart.png';
-import Discount from '/public/assets/discount.png';
-import Acai from '/public/acai/acai.png';
-import Combo from '/public/acai/combo.png';
-import Barca from '/public/acai/barca.png';
-import Cafe from '/public/acai/cafe.png';
-import Bolo from '/public/assets/bolo_de_pote.png';
 import Image from 'next/image';
+import Background_strawberries from '/public/assets/background_two.webp';
+import Background_cup_acai from '/public/assets/background_third.webp';
+import Background_acai from '/public/assets/background_four.webp';
+import Background_coffe from '/public/assets/background_five.webp';
+import Background_candy from '/public/assets/background_six.webp';
+import Heart from '/public/assets/heart.webp';
+import Discount from '/public/assets/discount.webp';
+import Acai from '/public/acai/acai.webp';
+import Combo from '/public/acai/combo.webp';
+import Barca from '/public/acai/barca.webp';
+import Cafe from '/public/acai/cafe.webp';
+import Bolo from '/public/assets/bolo_de_pote.webp';
 import BootstrapCarousel from '@/components/common/carousel';
 
 const HomePage = () => {
@@ -62,7 +61,7 @@ const HomePage = () => {
       width: 420,
       height: 490,
       title: 'Cafés Gelados',
-      desc: 'Imagine-se envolvido em um abraço caloroso enquanto desfruta de uma copo de café com chantilly. O aroma tentador do café recém-preparado flutua pelo ar, despertando seus sentidos e antecipando o prazer que está por vir.',
+      desc: 'Imagine-se envolvido em um abraço caloroso enquanto desfruta de uma copo de café com chantilly. O aroma tentador do café recém-preparado flutua pelo ar.',
     },
     {
       src: Bolo.src,
@@ -72,7 +71,7 @@ const HomePage = () => {
       width: 420,
       height: 490,
       title: 'Delícias no Pote',
-      desc: 'Delícias no pote é uma explosão de sabor que irá encantar os seus sentidos. Imagine-se mergulhando a colher em camadas suaves e sedosas de bolo de baunilha, onde cada pedaço é envolvido em uma doçura irresistível.',
+      desc: 'Delícias no pote é uma explosão de sabor que irá encantar os seus sentidos. Imagine-se mergulhando a colher em camadas suaves e sedosas de uma doçura irresistível.',
     },
   ];
 

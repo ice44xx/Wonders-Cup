@@ -2,19 +2,26 @@
 @import '@/styles/fonts.scss';
 
 .container_carousel {
+  position: relative;
   width: 100%;
-  .previous {
-    z-index: 5;
-    width: 600px;
-    height: 100%;
-    span {
-      z-index: 20;
-      position: absolute;
-      bottom: 30px;
+  .container_btn {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    bottom: 0;
+    .previous {
+      width: 50%;
+      height: 100%;
+      span {
+        z-index: 20;
+        position: absolute;
+        bottom: 30px;
+      }
     }
-  }
-  .next {
-    @extend .previous;
+    .next {
+      @extend .previous;
+    }
   }
 }
 .container {
@@ -60,6 +67,7 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
+      padding: 0 10px;
       .title {
         font-family: $font_secondary;
         color: $white;
@@ -70,7 +78,7 @@
         font-size: 22px;
       }
       .container_btn {
-        position: absolute;
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -112,12 +120,13 @@
 @media (max-width: 1680px) {
   .container {
     .container_right {
-      padding-left: 140px;
+      padding-left: 60px;
       .container_info {
+        max-width: 450px;
         margin-right: 20px;
         text-align: center;
         .title {
-          font-size: 35px;
+          font-size: 40px;
         }
         .desc {
           font-size: 18px;
@@ -130,32 +139,53 @@
     height: auto;
   }
 }
-@media (max-width: 980px) {
+@media (max-width: 1450px) {
   .container {
+    flex-direction: column;
+    .container_left {
+      width: 100%;
+    }
     .container_right {
-      padding-left: 140px;
+      width: 100%;
+      padding-left: 0px;
       .container_info {
-        z-index: 10;
-        min-width: 100%;
-        position: absolute;
-        top: 480px;
-        left: 0;
+        max-width: 700px;
         .title {
-          font-size: 50px;
+          font-size: 40px;
         }
         .desc {
           font-size: 20px;
-          padding: 0 50px;
-        }
-        .btn {
-          right: auto;
         }
       }
     }
   }
   .image {
-    top: 30px;
+    top: 60px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .image {
+    top: 80px;
     max-width: 350px;
-    height: auto;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    .container_right {
+      .container_info {
+        max-width: 700px;
+        .title {
+          font-size: 35px;
+        }
+        .desc {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .image {
+    top: 150px;
+    max-width: 280px;
   }
 }

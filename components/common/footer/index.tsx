@@ -1,8 +1,8 @@
 import styles from './styles.module.scss';
 import Image from 'next/image';
-import Logo from '/public/assets/footer.png';
-import Cup from '/public/assets/cup.png';
-import Candy from '/public/assets/candy.png';
+import Logo from '/public/assets/footer.webp';
+import Cup from '/public/assets/cup.webp';
+import Candy from '/public/assets/candy.webp';
 
 const Footer = () => {
   return (

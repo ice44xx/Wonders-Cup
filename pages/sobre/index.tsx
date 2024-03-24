@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.container_content}>
         <div className={styles.container_left}>
           <p className={styles.title}>Por que Wonders Cup?</p>
@@ -19,7 +19,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

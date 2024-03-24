@@ -1,9 +1,9 @@
+import React from 'react';
 import styles from './styles.module.scss';
 import Image from 'next/image';
-import Heart from '/public/assets/btn_heart.png';
-import React from 'react';
-import { Carousel, CarouselItem, CarouselControl, Button } from 'reactstrap';
+import Heart from '/public/assets/btn_heart.webp';
 import Link from 'next/link';
+import { Carousel, CarouselItem, CarouselControl, Button } from 'reactstrap';
 
 interface CarouselItemProps {
   src: string;
@@ -53,6 +53,7 @@ const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ items }) => {
                 'https://www.ifood.com.br/delivery/porto-alegre-rs/wonders-cup-cafeteria-e-acaiteria-cristal/37bf0085-15ab-4830-8fbe-6dd1c436d4b1'
               }
               target="_blank"
+              style={{ textDecoration: 'none' }}
             >
               <div className={styles.container_btn}>
                 <Button className={styles.btn}>Peça agora</Button>
@@ -76,8 +77,10 @@ const BootstrapCarousel: React.FC<BootstrapCarouselProps> = ({ items }) => {
     <div className={styles.container_carousel}>
       <Carousel activeIndex={activeIndex} next={next} previous={previous} fade={true}>
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} className={styles.previous} />
-        <CarouselControl direction="next" directionText="Next" onClickHandler={next} className={styles.next} />
+        <div className={styles.container_btn}>
+          <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} className={styles.previous} />
+          <CarouselControl direction="next" directionText="Next" onClickHandler={next} className={styles.next} />
+        </div>
       </Carousel>
     </div>
   );

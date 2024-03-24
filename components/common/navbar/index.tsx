@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
-import Image from 'next/image';
-import Logo from '@/public/assets/logo_navbar.png';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '@/public/assets/logo_navbar.webp';
 
 const Navbar = () => {
   return (

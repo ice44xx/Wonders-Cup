@@ -12,5 +12,60 @@
   .logo {
     max-width: 300px;
     height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    .logo {
+      max-width: 280px;
+    }
+    .cup {
+      max-width: 50px;
+      height: auto;
+      object-fit: cover;
+    }
+    .candy {
+      max-width: 70px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    .logo {
+      max-width: 200px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    .logo {
+      max-width: 150px;
+    }
+    .cup {
+      margin-top: -80px;
+      max-width: 30px;
+    }
+    .candy {
+      margin-bottom: -40px;
+      max-width: 50px;
+    }
+  }
+}
+@media (max-width: 300px) {
+  .container {
+    justify-content: center;
+    .logo {
+      max-width: 200px;
+    }
+    .cup {
+      display: none;
+    }
+    .candy {
+      display: none;
+    }
   }
 }

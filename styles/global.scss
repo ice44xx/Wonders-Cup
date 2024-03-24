@@ -29,10 +29,17 @@ div {
 }
 
 main {
-  overflow: hidden;
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  background-color: $background_primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
   color: $white;
+  background-color: $background_primary;
+  background-image: url('../public/assets/background.webp');
+  background-position: center;
 }
